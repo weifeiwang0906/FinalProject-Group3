@@ -8,6 +8,7 @@ In this part, I  will show you the methods of prepocessing the tweets data, enco
 ## Content
 -----------
 * [prepocessNLP](#prepocessNLP)
+  * slang.txt(abb part)
 * [bert_as_service](#bert_as_service)
 * [bertdata](#bertdata)
 * [runbert](#runbert)
@@ -46,7 +47,7 @@ This part is different from contraction part. In English, there are some express
 |--------- | --------|
 |lol,thx|happy,thanks|
 
-Here, I download a dictionary and a slang txt. I combine these two part to clean my data.
+Here, I download a dictionary and a slang text. I combine these two part to clean my data.
 
 
 
