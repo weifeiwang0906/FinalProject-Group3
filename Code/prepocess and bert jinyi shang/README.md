@@ -156,4 +156,26 @@ drive.mount('/content/drive/')
 ```
 cd /content/drive//My\ Drive/bert-master
 ```
-Then, 
+Then,  you can run bert model directly using:
+```
+!python run_classifier.py \
+  --task_name=cola \
+  --do_eval=true \
+  --do_train=true \
+  --do_predict=true \
+  --data_dir=6103project \
+  --vocab_file=cased_L-12_H-768_A-12/vocab.txt \
+  --bert_config_file=cased_L-12_H-768_A-12/bert_config.json \
+  --init_checkpoint=cased_L-12_H-768_A-12/bert_model.ckpt \
+  --max_seq_length=40 \
+  --train_batch_size=8 \
+  --learning_rate=2e-5 \
+  --num_train_epochs=3.0 \
+  --output_dir=output \
+  --do_lower_case=False
+```
+As we can see, our dataprocessor is cola. if your upload dataset have dev, you can do evaluation. Set your vocab_file, bert_config_file and init_checkpoint same as what you download from bert website.
+
+### bertresults
+-----------
+After finishing running, you can obtain a txt file named test result
