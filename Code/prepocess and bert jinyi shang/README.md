@@ -97,11 +97,11 @@ First, you need to install the server and client via pip:
 pip install bert-serving-server  # server
 pip install bert-serving-client  # client, independent of `bert-serving-server`
 ```
-Next, you need to download the Pre-trained BERT Model  
+Next, you need to download the Pre-trained BERT Model [you can download from here](https://github.com/google-research/bert#pre-trained-models).
 Then, your  Python >= 3.5 and  Tensorflow >= 1.10  
 Finally, start your bert as service using: 
 ```
 bert-serving-start -model_dir /tmp/english_L-12_H-768_A-12/ -num_worker=1
 ```
-when you see your prompt show : ready and request
+when you see your prompt show : ready and request, execute the 4 lines of codes
 
