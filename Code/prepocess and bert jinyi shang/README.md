@@ -103,9 +103,12 @@ Finally, start your bert as service using:
 ```
 bert-serving-start -model_dir /tmp/english_L-12_H-768_A-12/ -num_worker=1
 ```
-when you see your prompt show : ready and request, execute the 4 lines of codes
+when you see your prompt show : ready and request, execute the 4 lines of codes  
+Then, you can obtain a matrix with  the number of texts by 768.
 
-![][code-past]
+### bertdata
+-----------
+This is the third part.  
 
---------------
-[code-past]:/Code/prepocess and bert jinyi shang/img/bert as service1.PNG
+Bert as service is used for executing our traditional machine learning model. like decision tree, support vector machine, KNN etc.  
+This part aims to build the data suitable for bert
