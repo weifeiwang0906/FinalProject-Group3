@@ -1,11 +1,11 @@
 # Data prepocess and Bert
 ****
+In this part, I  will show you the methods of prepocessing the tweets data, encodding the text content to a vector with specific length(768) and how to use bert model to deal with NLP classification problem.
 
 ## Content
 * [prepocessNLP](#prepocessNLP)
-* [标题](#标题)
-* [文本](#文本)
-    * 普通文本
-    * 单行文本
-    * 多行文本
-    * 文字高亮
+* [bert_as_service](#bert_as_service)
+* [bertdata](#bertdata)
+* [runbert](#runbert)
+* [bertresults](#bertresults)
+
