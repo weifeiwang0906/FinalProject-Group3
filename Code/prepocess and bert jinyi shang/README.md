@@ -20,4 +20,6 @@ Data Prepocessing consists of Mislabel, CONTRACTION_MAP, @/#/http, Repetitive Le
 
 At the beginning, I grouped the train data by text and found there is a dozen of sentence have a different target, but the content of text are the same. Therefore, I CREATE a new column: target_relabeled and  revsie the mislabel manually.
 
-Contraction map: like |'ain't', 'don't', 'hadn't'|'is not','do not','had not'|
+Contraction map: like 
+|Original|Converted|
+|'ain't', 'don't', 'hadn't'|'is not','do not','had not'|
