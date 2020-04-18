@@ -68,6 +68,18 @@ Here, I use the package nltk.corpus, which contains many stopwords to clean the 
 from nltk.corpus import stopwords
 ```
 
+**Keywords Variable**:  
+Finally, in the training data, there is a column called keywords, it contains the disaster words of the text or the disaster this text discribed(didn't contain in the text).  
+Since these words are important, I add them to the text.
 
+### bert_as_service:
+-----------
+This is the second part.
 
+After prepocessing the text, we will encode the text content to a vector with specific length to run our traditional machine leaning model.
+
+Our methods is bert as service. Now, what is bert as service, simply speaking, bert as service is the encodder of bert. As we know, bert is a powerful deep learning model, which can solve nearly all of NLP problem. Therefore, we use bert as service to achieve our text to vector process.
+
+Here is a link of bert as service tutorial 
+[bert as service](https://github.com/hanxiao/bert-as-service )
 
