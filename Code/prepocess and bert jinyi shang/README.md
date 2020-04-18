@@ -49,6 +49,25 @@ This part is different from contraction part. In English, there are some express
 
 Here, I download a dictionary and a slang text. I combine these two part to clean my data.
 
+**Lowercase**:  
+|Original|Converted|
+|--------- | --------|
+|HE, THIS|he, this|
+
+Uniform case.
+
+**punctuation**:  
+|Delete|
+|--------- | 
+|!#@$%:;<=>,? |
+
+**Stopwords**:  
+In our text analysis, there are many words which didn't have actual meaning, like: 'to','at' etc.  
+Here, I use the package nltk.corpus, which contains many stopwords to clean the text.  
+```
+from nltk.corpus import stopwords
+```
+
 
 
 
