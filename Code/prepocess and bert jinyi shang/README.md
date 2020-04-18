@@ -111,4 +111,12 @@ Then, you can obtain a matrix with  the number of texts by 768.
 This is the third part.  
 
 Bert as service is used for executing our traditional machine learning model. like decision tree, support vector machine, KNN etc.  
-This part aims to build the data suitable for bert
+This part aims to build the data suitable for bert.  
+Here is the bert tutorial: [bert](https://github.com/google-research/bert).
+
+How to use bert to solve a binary classification problem?  
+if you download the bert model, in the **run_classifier.py**, you can see many different dataProcessors, these are some examples google provide to solve different NLP problem. One of processor named  **ColaProcessor** is used for solve the binary classification problem.
+
+Therefore, we can biuld our data structure like Cola data. Then, we can run our model directly.
+
+What's more, since our test data is from kaggle and we don't have have the true value to evaluate our prediction. we run bert twice. one is train, evaluation and test data, this is used for obtain the predict values to submit on kaggle. The other is only train and evaluation data, this is used for plot roc curve, evaluation purpose.
