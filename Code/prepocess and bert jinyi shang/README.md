@@ -119,4 +119,19 @@ if you download the bert model, in the **run_classifier.py**, you can see many d
 
 Therefore, we can biuld our data structure like Cola data. Then, we can run our model directly.
 
-What's more, since our test data is from kaggle and we don't have have the true value to evaluate our prediction. we run bert twice. one is train, evaluation and test data, this is used for obtain the predict values to submit on kaggle. The other is only train and evaluation data, this is used for plot roc curve, evaluation purpose.
+What's more, since our test data is from kaggle and we don't have have the true value to evaluate our prediction. we run bert twice. one is train, evaluation and test data, this is used for obtain the predict values to submit on kaggle. The other is only train and evaluation data, this is used for plot roc curve, evaluation purpose.  
+
+This is our split:  
+```
+df_bert_train, df_bert_dev = train_test_split(df_bert, test_size=0.2,random_state=100)
+```
+First run:  
+
+|intput|output|
+|--------- | --------|
+|train, evalution, test|test prediction|
+
+Second run:
+|intput|output|
+|--------- | --------|
+|train, evalution|evaluation prediction|
