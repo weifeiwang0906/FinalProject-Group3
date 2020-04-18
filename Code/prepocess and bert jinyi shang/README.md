@@ -2,6 +2,8 @@
 ****
 In this part, I  will show you the methods of prepocessing the tweets data, encodding the text content to a vector with specific length(768) and how to use bert model to deal with NLP classification problem.
 
+
+
 ****
 ## Content
 -----------
@@ -25,6 +27,7 @@ Contraction map:
 |Original|Converted|
 |--------- | --------|
 |ain't, don't, hadn't|is not, do not, had not|   
+
 Here, I use a contraction dictionary from the Internet to achieve this. You can see the dictionary in the code.  
 
 @/#/http:  
