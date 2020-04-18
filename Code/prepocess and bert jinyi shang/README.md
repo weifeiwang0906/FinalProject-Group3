@@ -108,4 +108,4 @@ when you see your prompt show : ready and request, execute the 4 lines of codes
 ![][code-past]
 
 --------------
-[code-past]:Code/prepocess and bert jinyi shang/img/bert as service1.PNG
+[code-past]:/Code/prepocess and bert jinyi shang/img/bert as service1.PNG
