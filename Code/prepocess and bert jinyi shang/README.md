@@ -97,8 +97,8 @@ First, you need to install the server and client via pip:
 pip install bert-serving-server  # server
 pip install bert-serving-client  # client, independent of `bert-serving-server`
 ```
-Next, you need to download the Pre-trained BERT Model
-Then, your  Python >= 3.5 and  Tensorflow >= 1.10
+Next, you need to download the Pre-trained BERT Model  
+Then, your  Python >= 3.5 and  Tensorflow >= 1.10  
 Finally, start your bert as service using: 
 ```
 bert-serving-start -model_dir /tmp/english_L-12_H-768_A-12/ -num_worker=1
