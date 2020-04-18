@@ -105,7 +105,7 @@ bert-serving-start -model_dir /tmp/english_L-12_H-768_A-12/ -num_worker=1
 ```
 when you see your prompt show : ready and request, execute the 4 lines of codes
 
-![][code-past]
+![code-past]
 
 --------------
 [code-past]:/Code/prepocess and bert jinyi shang/img/bert as service1.PNG
