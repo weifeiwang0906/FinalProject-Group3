@@ -12,6 +12,7 @@ In this part, I  will show you the methods of prepocessing the tweets data, enco
 
 ### prepocessNLP
 -----------
-This is the first part. We need to download the data from kaggle competition
+This is the first part. We need to download the data from kaggle competition:
 [NLP Realornot](https://www.kaggle.com/c/nlp-getting-started )
+Data Prepocessing consists of Mislabel, CONTRACTION_MAP, @/#/http, Repetitive Letter, Abbreviation, Lowercase, punctuation, Stopwords and Keywords Variable.
 
