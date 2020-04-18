@@ -104,4 +104,5 @@ Finally, start your bert as service using:
 bert-serving-start -model_dir /tmp/english_L-12_H-768_A-12/ -num_worker=1
 ```
 when you see your prompt show : ready and request, execute the 4 lines of codes
-
+[code-past]:/img/codepast-logo.jpg "公众号：编程往事"
+![][/img/bert]
