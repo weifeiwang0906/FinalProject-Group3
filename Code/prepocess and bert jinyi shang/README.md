@@ -24,8 +24,8 @@ At the beginning, I grouped the train data by text and found there is a dozen of
 Contraction map:   
 |Original|Converted|
 |--------- | --------|
-|ain't, don't, hadn't|is not, do not, had not|  
-Here, I use a contraction dictionary from the Internet to achieve this. You can see the dictionary in the code.
+|ain't, don't, hadn't|is not, do not, had not|   
+Here, I use a contraction dictionary from the Internet to achieve this. You can see the dictionary in the code.  
 
 @/#/http:  
 
