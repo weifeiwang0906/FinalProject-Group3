@@ -20,16 +20,34 @@ This is the first part. We need to download the data from kaggle competition:
 
 Data Prepocessing consists of Mislabel, CONTRACTION_MAP, @/#/http, Repetitive Letter, Abbreviation, Lowercase, punctuation, Stopwords and Keywords Variable.
 
-Mislabel:  
+**Mislabel:**  
 At the beginning, I grouped the train data by text and found there is a dozen of sentence have a different target, but the content of text are the same. Therefore, I CREATE a new column: target_relabeled and  revsie the mislabel manually.
 
-Contraction map:   
+**Contraction map:**   
 |Original|Converted|
 |--------- | --------|
 |ain't, don't, hadn't|is not, do not, had not|   
 
 Here, I use a contraction dictionary from the Internet to achieve this. You can see the dictionary in the code.  
 
-@/#/http:  
+**@/#/http:**  
+In the train data, there are lots of website information, @ and # ,this part used for cleaning them.
+
+**Repetitive Letter**:
+|Original|Converted|
+|--------- | --------|
+|loooooook, goooood|look,good| 
+
+Here, I write some loops to convert some words 'loooook' to 'look'
+
+**Abbreviation**:  
+This part is different from contraction part. In English, there are some expression like 'lmao' means happy, 'icq' means 'I seek you'  
+|Original|Converted|
+|--------- | --------|
+|lol,thx|happy,thanks|
+
+Here, I download a dictionary and a slang txt. I combine these two part to clean my data.
+
+
 
 
