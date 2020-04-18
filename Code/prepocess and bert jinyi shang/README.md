@@ -1,6 +1,6 @@
 # Data prepocess, Bert as service and Bert
 ****
-In this part, I  will show you the methods of prepocessing the tweets data, encodding the text content to a vector with specific length(768) and how to use bert model to deal with NLP classification problem.
+In this part will show the methods of prepocessing the tweets data, encodding the text content to a vector with specific length(768) using bert as service and how to use bert model to solve NLP classification problem.
 
 
 
@@ -135,3 +135,15 @@ Second run:
 |intput|output|
 |--------- | --------|
 |train, evalution|evaluation prediction|
+
+### runbert
+-----------
+This is the fourth part. All of code here is running on the Colaboratory.
+
+Since google provide a free Gpu and it's faster to run deep learning model
+Here is the link: [Colaboratory](https://colab.research.google.com/notebooks/gpu.ipynb)
+Notice, if you are the first user of colab, remember to authorize.
+
+As for bert tutorial:
+first, you need to download the the pretrain bert model:[here](https://github.com/google-research/bert#pre-trained-models).
+Then, upload your file to the google drive, and open a new ipynb
