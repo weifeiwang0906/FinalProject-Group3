@@ -72,15 +72,36 @@ from nltk.corpus import stopwords
 Finally, in the training data, there is a column called keywords, it contains the disaster words of the text or the disaster this text discribed(didn't contain in the text).  
 Since these words are important, I add them to the text.
 
-****
+
 ### bert_as_service:
 -----------
 This is the second part.
 
 After prepocessing the text, we will encode the text content to a vector with specific length to run our traditional machine leaning model.
 
-Our methods is bert as service. Now, what is bert as service, simply speaking, bert as service is the encodder of bert. As we know, bert is a powerful deep learning model, which can solve nearly all of NLP problem. Therefore, we use bert as service to achieve our text to vector process.
+Our methods is bert as service. Now, what is bert as service, simply speaking, bert as service is the encoder of bert. As we know, bert is a powerful deep learning model, which can solve nearly all of NLP problem. Therefore, we use bert as service to achieve our text to vector process.
 
 Here is a link of bert as service tutorial 
 [bert as service](https://github.com/hanxiao/bert-as-service )
+
+Actually, there are only 4 lines of code to encode our text  
+```
+from bert_serving.client import BertClient
+text=[x for x in datatrain]
+bc = BertClient()
+t1=bc.encode(text)
+```
+if you want to import this, you need to build bert envirnoment:
+First, you need to install the server and client via pip:  
+```
+pip install bert-serving-server  # server
+pip install bert-serving-client  # client, independent of `bert-serving-server`
+```
+Next, you need to download the Pre-trained BERT Model
+Then, your  Python >= 3.5 and  Tensorflow >= 1.10
+Finally, start your bert as service using: 
+```
+bert-serving-start -model_dir /tmp/english_L-12_H-768_A-12/ -num_worker=1
+```
+when you see your prompt show : ready and request
 
