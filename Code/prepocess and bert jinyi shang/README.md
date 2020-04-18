@@ -13,5 +13,5 @@ In this part, I  will show you the methods of prepocessing the tweets data, enco
 ### prepocessNLP
 -----------
 This is the first part. We need to download the data from kaggle competition
-[NLP Realornot](https://www.kaggle.com/c/nlp-getting-started "悬停显示")
+[NLP Realornot](https://www.kaggle.com/c/nlp-getting-started )
 
