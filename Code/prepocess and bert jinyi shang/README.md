@@ -141,9 +141,19 @@ Second run:
 This is the fourth part. All of code here is running on the Colaboratory.
 
 Since google provide a free Gpu and it's faster to run deep learning model
-Here is the link: [Colaboratory](https://colab.research.google.com/notebooks/gpu.ipynb)
+Here is the link: [Colaboratory](https://colab.research.google.com/notebooks/gpu.ipynb)  
 Notice, if you are the first user of colab, remember to authorize.
 
 As for bert tutorial:
-first, you need to download the the pretrain bert model:[here](https://github.com/google-research/bert#pre-trained-models).
-Then, upload your file to the google drive, and open a new ipynb
+first, you need to download the the pretrain bert model: [Here](https://github.com/google-research/bert#pre-trained-models).  
+Then, upload your file to the google drive, and open a new ipynb.
+
+first, set your envirnoment and connect your google drive with your ipynb:
+```
+from google.colab import drive
+drive.mount('/content/drive/')
+```
+```
+cd /content/drive//My\ Drive/bert-master
+```
+Then, 
