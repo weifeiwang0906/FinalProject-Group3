@@ -177,7 +177,7 @@ Then,  you can run bert model directly using:
 As we can see, our dataprocessor is cola. if your upload dataset have dev, you can do evaluation. Set your vocab_file, bert_config_file and init_checkpoint same as what you download from bert website.
 
 Here's the result on the evaluation set:
-![image]()
+![image](https://github.com/weifeiwang0906/FinalProject-Group3/blob/master/Code/prepocess%20and%20bert%20jinyi%20shang/img/eval.PNG)
 
 ### bertresults
 -----------
