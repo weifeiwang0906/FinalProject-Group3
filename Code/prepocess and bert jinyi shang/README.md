@@ -178,5 +178,13 @@ As we can see, our dataprocessor is cola. if your upload dataset have dev, you c
 
 ### bertresults
 -----------
-After finishing running, you can obtain a txt file named test result
-and
+After finishing running, you can obtain a txt file named test result which contains the probability of predicted label
+
+And the txt form like this:
+|   |   |
+|--------- | --------|
+|0.1|0.9|
+|0.2|0.8|
+|0.3|0.7|
+|0.1|0.9|
+|...|...|
