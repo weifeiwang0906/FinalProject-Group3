@@ -176,6 +176,9 @@ Then,  you can run bert model directly using:
 ```
 As we can see, our dataprocessor is cola. if your upload dataset have dev, you can do evaluation. Set your vocab_file, bert_config_file and init_checkpoint same as what you download from bert website.
 
+Here's the result on the evaluation set:
+![image]()
+
 ### bertresults
 -----------
 After finishing running, you can obtain a txt file named test result which contains the probability of predicted label
