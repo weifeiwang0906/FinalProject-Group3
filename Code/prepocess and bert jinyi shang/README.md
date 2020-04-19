@@ -1,6 +1,6 @@
 # Data prepocess, Bert as service and Bert
 ****
-In this part will show the methods of prepocessing the tweets data, encodding the text content to a vector with specific length(768) using bert as service and how to use bert model to solve NLP classification problem.
+This part will show the methods of prepocessing the tweets data, encodding the text content to a vector with specific length(768) using bert as service and how to use bert model to solve NLP classification problem.
 
 
 
@@ -188,3 +188,11 @@ And the txt form like this:
 |0.3|0.7|
 |0.1|0.9|
 |...|...|
+
+Load this text and use this part of code covert theprobability to label.
+
+Also, ploting ROC curve is at this part
+```
+false_positive_rate,true_positive_rate,thresholds=roc_curve(labels, dfdev.iloc[:,1])
+```
+Use this obtain TPR, FPR and the sorted probability.
