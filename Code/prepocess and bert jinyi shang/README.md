@@ -196,3 +196,5 @@ Also, ploting ROC curve is at this part
 false_positive_rate,true_positive_rate,thresholds=roc_curve(labels, dfdev.iloc[:,1])
 ```
 Use this obtain TPR, FPR and the sorted probability.
+
+![image](https://github.com/weifeiwang0906/FinalProject-Group3/blob/master/Code/prepocess%20and%20bert%20jinyi%20shang/img/ROC.PNG)
