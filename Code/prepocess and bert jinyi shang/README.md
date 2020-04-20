@@ -115,7 +115,7 @@ This part aims to build the data suitable for bert.
 Here is the bert tutorial: [bert](https://github.com/google-research/bert).
 
 How to use bert to solve a binary classification problem?  
-if you download the bert model, in the **run_classifier.py**, you can see many different dataProcessors, these are some examples google provide to solve different NLP problem. One of processor named  **ColaProcessor** is used for solve the binary classification problem.
+if you download the bert model, in the **run_classifier.py**, you can see many different dataProcessors, these are some examples google provide to solve different NLP problem. One of processor named  **ColaProcessor** is used for solving the binary classification problem.
 
 Therefore, we can biuld our data structure like Cola data. Then, we can run our model directly.
 
