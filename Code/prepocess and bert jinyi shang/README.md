@@ -22,7 +22,7 @@ This is the first part. We need to download the data from kaggle competition:
 Data Prepocessing consists of Mislabel, CONTRACTION_MAP, @/#/http, Repetitive Letter, Abbreviation, Lowercase, punctuation, Stopwords and Keywords Variable.
 
 **Mislabel:**  
-At the beginning, I grouped the train data by text and found there is a dozen of sentence have a different target, but the content of text are the same. Therefore, I CREATE a new column: target_relabeled and  revsie the mislabel manually.
+At the beginning, I grouped the train data by text and found there is a dozen of sentence have a different target, but the content of text are the same. Therefore, I CREATE a new column: target_relabeled and  revise the mislabel manually.
 
 **Contraction map:**   
 |Original|Converted|
