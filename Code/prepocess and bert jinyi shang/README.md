@@ -69,7 +69,7 @@ from nltk.corpus import stopwords
 ```
 
 **Keywords Variable**:  
-Finally, in the training data, there is a column called keywords, it contains the disaster words of the text or the disaster this text discribed(didn't contain in the text).  
+Finally, in the training data, there is a column called keywords, it contains the disaster words of the text or the disaster this text described(didn't contain in the text).  
 Since these words are important, I add them to the text.
 
 
