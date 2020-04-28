@@ -7,6 +7,7 @@ from sklearn.naive_bayes import GaussianNB
 from sklearn.metrics import accuracy_score, classification_report, confusion_matrix, f1_score
 from sklearn.metrics import roc_curve, roc_auc_score, precision_recall_curve, auc
 
+# 1. read data and see the information about them
 ron_train = pd.read_csv('/Users/apple/Documents/me/GWU/courses/ds6103/python03/Data-Mining-master/final project/realornot_trainencode.csv')
 print(ron_train.head())
 print(ron_train.describe())
@@ -18,12 +19,18 @@ print(ron_test.describe())
 ori_test = pd.read_csv('/Users/apple/Documents/me/GWU/courses/ds6103/python03/Data-Mining-master/final project/nlp-getting-started/test.csv')
 id = ori_test['id']
 
-labels_train = np.array(ron_train['768'])
-features_train = ron_train.drop('768', axis=1)
+# 2. data pre-processing and feature engineering
+ron_train.drop('Unnamed: 0', axis=1, inplace=True)
+ron_test.drop('Unnamed: 0', axis=1, inplace=True)
+# abels_train = np.array(ron_train['768'])
+# features_train = ron_train.drop('768', axis=1)
+labels_train = ron_train.iloc[:, -1]
+features_train = ron_train.iloc[:, 0:-1]
 features_list_train = list(features_train.columns)
 features_train = np.array(features_train)
 
-# train and test
+# 3. modeling
+# 3.1 train and test
 nb_all = GaussianNB()
 nb_all.fit(features_train, labels_train)
 
@@ -37,22 +44,25 @@ with open('test_Naive Bayes.csv', 'w', newline='') as f:
     for i in range(1, len(pred_all_nb)+1):
         writer.writerow([id[i-1], pred_all_nb[i-1]])
 
-# only train file. train set is splited into train and test
+# 3.2 only train file. train set is splited into train and test
 features_train_train, features_train_test, labels_train_train, labels_train_test = train_test_split(
     features_train, labels_train, test_size=0.2, random_state=100
 )
 nb = GaussianNB()
 nb.fit(features_train_train, labels_train_train)
 
+# 4. prediction (only train)
 pred_nb = nb.predict(features_train_test)
 
+# 5. output (only train)
+# 5.1 Accuracy, confusion matrix and classification matrix
 print('Accuracy: %.3f' % accuracy_score(labels_train_test, pred_nb))
 print('Confusion matrix is:')
 print(confusion_matrix(labels_train_test, pred_nb))
 print('Classification:')
 print(classification_report(labels_train_test, pred_nb))
 
-# ROC Curve
+# 5.2 ROC Curve
 ns_probs_nb = [0 for _ in range(len(labels_train_test))]
 nb_probs = nb.predict_proba(features_train_test)
 nb_probs = nb_probs[:, 1]
@@ -73,7 +83,7 @@ plt.legend(['No Skill', 'Naive Bayes'])
 plt.savefig('nb_ROC.png')
 plt.show()
 
-# P-R Curve
+# 5.3 P-R Curve
 nb_probs_pr = nb.predict_proba(features_train_test)
 nb_probs_pr = nb_probs_pr[:, 1]
 
