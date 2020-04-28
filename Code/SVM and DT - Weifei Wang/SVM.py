@@ -1,7 +1,7 @@
 import pandas as pd
 from sklearn.svm import SVC
 from sklearn.model_selection import train_test_split
-from sklearn.metrics import roc_curve, auc, precision_recall_curve
+from sklearn.metrics import roc_curve, auc, precision_recall_curve, f1_score, average_precision_score
 import matplotlib.pyplot as plt
 
 # 1. read data
@@ -55,7 +55,9 @@ plt.show()
 
 # 6.2 PR
 precision, recall, threshold_ = precision_recall_curve(y_test, preds)
-plt.title('Precision Recall')
+average_precision = average_precision_score(y_test, preds)
+plt.title('Precision Recall:'
+          'AP={0:0.2f}'.format(average_precision))
 plt.plot(recall, precision, "b", label="SVM")
 plt.plot([0, 1], [no_skill, no_skill], 'r--', label="No Skill")
 plt.legend(loc='upper right')
